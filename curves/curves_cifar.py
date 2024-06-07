@@ -1,0 +1,21 @@
+import torch
+import numpy as np
+import matplotlib.pyplot as plt
+cifar_wong=torch.load('./best_iter_firstbatch_cifar_wong_L1_2000generation.pt')
+cifar_standard_1000=torch.load('./best_iter_firstbatch_cifar_standard_L1_1000generation.pt')
+cifar_standard_2000=torch.load('./best_iter_firstbatch_cifar_standard_L1_2000generation.pt')
+cifar_standard_3000=torch.load('./best_iter_firstbatch_cifar_standard_L1_3000generation.pt')
+x_1000 = np.linspace(0, 1000, 1000)
+x_2000 = np.linspace(0, 2000, 2000)
+x_3000 = np.linspace(0, 3000, 3000)
+plt.figure(figsize=(8, 6))
+plt.plot(x_1000, cifar_standard_1000,color='r',label='Standard-C-1000')
+plt.plot(x_2000, cifar_standard_2000,color='b',label='Standard-C-2000')
+plt.plot(x_3000, cifar_standard_3000,color='violet',label='Standard-C-3000')
+plt.plot(x_2000, cifar_wong,color='g',label='Wong-C')
+plt.legend(loc="best")
+plt.xlabel('Generation Num')
+plt.ylabel('average minus fitness of elites')
+plt.title("Fitness curve of L1 attack on CIFAR10")
+plt.grid(True)
+print('finish')
