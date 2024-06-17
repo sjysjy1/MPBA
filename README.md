@@ -1,4 +1,4 @@
-### MPBA (Minimum Norm Black-box Attack)
+### MPBA (Minimum Perturbation Black-box Attack)
 This repository contains:<br>
 1). the implementation of our proposed black-box L1 adversarial attack based on genetic algorithm;<br>
 2). the code for reproducing our experiment;<br>
