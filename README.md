@@ -5,7 +5,7 @@ Genetic Algorithm", In Proc. 6th IEEE International Conference on Artificial Int
 Testing and Evaluation of Large Language Models Workshop, Shanghai, China, July 15-18, 2024 
 
 #### This repository contains:<br>
-1). the implementation of our proposed black-box L1 adversarial attack based on genetic algorithm;<br>
+1). the implementation of our proposed black-box ℓ1 and ℓ2 adversarial attack based on genetic algorithm;<br>
 2). the code for reproducing our experiment;<br>
 3). our experimental results.<br>
 #### Requirements
